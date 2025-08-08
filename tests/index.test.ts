@@ -5,7 +5,7 @@ const collection_2: bigint[] = [100n,5n]        // sorted max->min
 const collection_3: bigint[] = [0n,9n]          // sorted min->max
 
 function answer(big_array: bigint[]): bigint[] {        // so we don't have to hardcode expected results
-    return big_array.sort((a ,b) => {
+    return big_array.slice().sort((a ,b) => {
         if (a > b) return 1;
         else if (a < b) return -1;
         else return 0;
@@ -75,8 +75,8 @@ describe('unit tests', () => {
             collection_1,
             [],
             [])
-        ).toStrictEqual(answer(     // concat empty array to prevent mutation
-            collection_1.concat([])
+        ).toStrictEqual(answer(
+            collection_1
         ));
     });
 
@@ -86,7 +86,7 @@ describe('unit tests', () => {
             collection_2,
             [])
         ).toStrictEqual(answer(
-            collection_2.concat([])
+            collection_2
         ));
     });
 
@@ -96,7 +96,7 @@ describe('unit tests', () => {
             [],
             collection_3)
         ).toStrictEqual(answer(
-            collection_3.concat([])
+            collection_3
         ));
     });
 
