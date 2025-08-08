@@ -22,4 +22,10 @@ Use this command to run unit tests:
 ```
 npm test
 ```
-Test cases can be viewed and edited in ```~/tests/index.test.ts```
+
+### Key files
+```
+Merge Function: ~/src/merge.ts
+Test Cases: ~/tests/index.test.ts
+```
+**Note: If modifying ```merge.ts```, make sure to recompile using ```tsc merge.ts``` before rerunning tests**
