@@ -18,6 +18,10 @@ npm install -g typescript
 ```
 
 ### Run
+Navigate to the project's root directory:
+```
+cd /path/to/project/primo-pretest
+```
 Use this command to run unit tests:
 ```
 npm test
@@ -28,4 +32,8 @@ npm test
 Merge Function: ~/src/merge.ts
 Test Cases: ~/tests/index.test.ts
 ```
-**Note: If modifying ```merge.ts```, make sure to recompile using ```tsc merge.ts``` before rerunning tests**
+**Note: If modifying ```merge.ts```, make sure to recompile before rerunning tests**
+```
+cd src
+tsc merge.ts
+```
