@@ -12,13 +12,15 @@ and provide how to setup dependency and execute code and unit test\
 Note: Don't allow to use any sort function
 
 ### Setup
+If device does not yet have Node/npm installed, install it from [Node.js](nodejs.org/en/download)
+
 If Typescript is not yet installed, run:
 ```
 npm install -g typescript
 ```
 
-### Run
-Navigate to the project's root directory:
+### Testing
+Using Terminal (iOS) or Command Prompt/Powershell (Windows), navigate to the project's root directory:
 ```
 cd /path/to/project/primo-pretest
 ```
